@@ -4,6 +4,12 @@ window = display.set_mode((700,500))
 
 background = transform.scale(image.load('ICantBreathe.jpg'),(700,500))
 
+mixer.init()
+
+mixer.music.load('galaxy-meme.ogg')
+
+mixer.music.play(loops = -1)
+
 class GameSprite(sprite.Sprite):
     def __init__(self, image33, speed, x, y):
         super().__init__()
